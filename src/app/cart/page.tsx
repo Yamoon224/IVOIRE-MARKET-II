@@ -47,25 +47,25 @@ export default function CartPage() {
       </div>
 
       {/* Étapes */}
-      <div className="flex items-center gap-2 mb-8 text-sm">
-        <span className="flex items-center gap-1.5 text-orange-600 font-semibold">
+      <div className="flex items-center gap-1.5 sm:gap-2 mb-8 text-sm">
+        <span className="flex items-center gap-1 sm:gap-1.5 text-orange-600 font-semibold">
           <span className="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-xs font-bold">1</span>
-          Panier
+          <span className="hidden sm:inline">Panier</span>
         </span>
-        <div className="flex-1 h-px bg-gray-200 max-w-16"></div>
-        <span className="flex items-center gap-1.5 text-gray-400">
+        <div className="flex-1 h-px bg-gray-200 max-w-8 sm:max-w-16"></div>
+        <span className="flex items-center gap-1 sm:gap-1.5 text-gray-400">
           <span className="w-6 h-6 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center text-xs font-bold">2</span>
-          Livraison
+          <span className="hidden sm:inline">Livraison</span>
         </span>
-        <div className="flex-1 h-px bg-gray-200 max-w-16"></div>
-        <span className="flex items-center gap-1.5 text-gray-400">
+        <div className="flex-1 h-px bg-gray-200 max-w-8 sm:max-w-16"></div>
+        <span className="flex items-center gap-1 sm:gap-1.5 text-gray-400">
           <span className="w-6 h-6 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center text-xs font-bold">3</span>
-          Paiement
+          <span className="hidden sm:inline">Paiement</span>
         </span>
-        <div className="flex-1 h-px bg-gray-200 max-w-16"></div>
-        <span className="flex items-center gap-1.5 text-gray-400">
+        <div className="flex-1 h-px bg-gray-200 max-w-8 sm:max-w-16"></div>
+        <span className="flex items-center gap-1 sm:gap-1.5 text-gray-400">
           <span className="w-6 h-6 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center text-xs font-bold">4</span>
-          Confirmation
+          <span className="hidden sm:inline">Confirmation</span>
         </span>
       </div>
 

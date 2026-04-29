@@ -151,25 +151,25 @@ export default function CheckoutPage() {
       </div>
 
       {/* Étapes */}
-      <div className="flex items-center gap-2 mb-8 text-sm">
-        <span className="flex items-center gap-1.5 text-gray-400">
+      <div className="flex items-center gap-1.5 sm:gap-2 mb-8 text-sm">
+        <span className="flex items-center gap-1 sm:gap-1.5 text-gray-400">
           <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs">✓</span>
-          Panier
+          <span className="hidden sm:inline">Panier</span>
         </span>
-        <div className="flex-1 h-px bg-gray-200 max-w-16"></div>
-        <span className={`flex items-center gap-1.5 ${step >= 1 ? "text-orange-600 font-semibold" : "text-gray-400"}`}>
+        <div className="flex-1 h-px bg-gray-200 max-w-8 sm:max-w-16"></div>
+        <span className={`flex items-center gap-1 sm:gap-1.5 ${step >= 1 ? "text-orange-600 font-semibold" : "text-gray-400"}`}>
           <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${step >= 1 ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-500"}`}>2</span>
-          Livraison
+          <span className="hidden sm:inline">Livraison</span>
         </span>
-        <div className="flex-1 h-px bg-gray-200 max-w-16"></div>
-        <span className={`flex items-center gap-1.5 ${step === 2 ? "text-orange-600 font-semibold" : "text-gray-400"}`}>
+        <div className="flex-1 h-px bg-gray-200 max-w-8 sm:max-w-16"></div>
+        <span className={`flex items-center gap-1 sm:gap-1.5 ${step === 2 ? "text-orange-600 font-semibold" : "text-gray-400"}`}>
           <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${step === 2 ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-500"}`}>3</span>
-          Paiement
+          <span className="hidden sm:inline">Paiement</span>
         </span>
-        <div className="flex-1 h-px bg-gray-200 max-w-16"></div>
-        <span className="flex items-center gap-1.5 text-gray-400">
+        <div className="flex-1 h-px bg-gray-200 max-w-8 sm:max-w-16"></div>
+        <span className="flex items-center gap-1 sm:gap-1.5 text-gray-400">
           <span className="w-6 h-6 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center text-xs font-bold">4</span>
-          Confirmation
+          <span className="hidden sm:inline">Confirmation</span>
         </span>
       </div>
 

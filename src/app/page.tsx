@@ -35,7 +35,7 @@ export default function HomePage() {
               {currentBanner.cta}
             </button>
           </div>
-          <div className="flex-1 flex justify-center">
+          <div className="hidden md:flex flex-1 justify-center">
             <div className="flex flex-row gap-3 items-center">
               {banners.map((b, i) => (
                 <button
@@ -85,10 +85,10 @@ export default function HomePage() {
         {/* ======================== CATÉGORIES ======================== */}
         <section className="py-10">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Nos rayons</h2>
-          <div className="grid grid-cols-4 sm:grid-cols-9 gap-3">
+          <div className="flex gap-3 overflow-x-auto scrollbar-hide pb-1 sm:grid sm:grid-cols-9 sm:overflow-visible sm:pb-0">
             <button
               onClick={() => setActiveCat(null)}
-              className={`flex flex-col items-center gap-2 p-3 rounded-xl transition-all ${
+              className={`flex-shrink-0 w-16 sm:w-auto flex flex-col items-center gap-2 p-3 rounded-xl transition-all ${
                 activeCat === null
                   ? "bg-orange-500 text-white shadow-md scale-105"
                   : "bg-gray-50 text-gray-600 hover:bg-gray-100"
@@ -101,7 +101,7 @@ export default function HomePage() {
               <button
                 key={cat.id}
                 onClick={() => setActiveCat(activeCat === cat.id ? null : cat.id)}
-                className={`flex flex-col items-center gap-2 p-3 rounded-xl transition-all ${
+                className={`flex-shrink-0 w-16 sm:w-auto flex flex-col items-center gap-2 p-3 rounded-xl transition-all ${
                   activeCat === cat.id
                     ? "bg-orange-500 text-white shadow-md scale-105"
                     : "bg-gray-50 text-gray-600 hover:bg-gray-100"
